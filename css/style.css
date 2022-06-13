@@ -1,3 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
-    background-color: azure;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #b0d2d2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    padding-left: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: #fff;
+    transition: .5s;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.main__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__column-left {
+    width: 30%;
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+    background-color: #b0d2d2;
+}
+
+.main__column-right {
+    width: 70%;
+}
+
+.photo {
+    margin: 0 20px 15px 10px;
+    border-radius: 25%;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border-radius: 20px;
+    background-color: #d7e1e3;
+    letter-spacing: 2px;
+}
+
+.section-text {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.education__section-text {
+    list-style: inside;
+}
+
+.profile {
+    margin: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile__name {
+    font-size: 75px;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.profile__prof{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.footer__link{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+    color: #fff;
+    transition: .5s;
+}
+
+.footer__img {
+    width: 86px;
+    height: 32px;
 }
